@@ -3,47 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101b25">
-  <meta name="description" content="Zeyu Yu — a personal portfolio featuring selected internships and education.">
-  <title>Zeyu Yu — Portfolio</title>
-  <link rel="icon" href="https://zeyu-yu-resume.netlify.app/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#fbfbfa">
+  <meta name="description" content="Zeyu Yu — selected internship experience and education.">
+  <title>Zeyu Yu</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-    :root{--ink:#101b25;--paper:#f8f7f2;--chalk:#f2f5ef;--muted:#647078;--lime:#d8fa83;--line:#d9dfda;--display:'Manrope','Arial',sans-serif;--body:'DM Sans','Arial',sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,a{ -webkit-tap-highlight-color:transparent}::selection{background:var(--lime);color:var(--ink)}
-    .frame{max-width:1480px;margin:auto;padding:0 6.1%}.eyebrow{font-family:var(--display);font-size:.72rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase}.rule{height:1px;background:var(--line)}
-    header{position:relative;z-index:10;background:var(--paper)}.nav{height:92px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #dce2dc}.wordmark{font-family:var(--display);font-size:1.15rem;font-weight:800;letter-spacing:-.075em}.wordmark .mark{display:inline-flex;width:32px;height:32px;justify-content:center;align-items:center;margin-right:11px;border-radius:50%;background:var(--ink);color:var(--lime);font-size:.88rem;letter-spacing:-.1em}.nav-right{display:flex;align-items:center;gap:34px;font-size:.84rem;font-weight:700}.nav-right a{transition:color .2s}.nav-right a:hover{color:#708941}.nav-pill{border:1px solid #b4bfb6;padding:10px 17px;border-radius:100px}.nav-pill:hover{background:var(--lime)}
-    .hero{position:relative;overflow:hidden;background:var(--ink);color:#f5f7f1;isolation:isolate}.hero:before{content:"";position:absolute;inset:0;opacity:.22;background-image:linear-gradient(#81929822 1px,transparent 1px),linear-gradient(90deg,#81929822 1px,transparent 1px);background-size:76px 76px;mask-image:linear-gradient(90deg,transparent 0%,black 50%)}.hero:after{content:"";position:absolute;width:560px;height:560px;border:1px solid #bce87545;border-radius:50%;right:-13%;top:-45%;box-shadow:0 0 0 68px #9ec96a0d,0 0 0 136px #9ec96a0a;pointer-events:none}
-    .hero-inner{position:relative;min-height:660px;padding-top:93px;padding-bottom:74px;display:flex;flex-direction:column;justify-content:space-between;gap:58px}.hero-top{display:flex;justify-content:space-between;align-items:center;gap:24px}.status{display:inline-flex;align-items:center;gap:10px;font-size:.8rem;font-weight:700;color:#d9e7d1}.status-dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 5px #d8fa8322}.hero-top .side-note{font-size:.75rem;color:#b5c5c0;letter-spacing:.08em}
-    .hero-title{margin:0;font:800 clamp(5.7rem,11.5vw,12.8rem)/.96 var(--display);letter-spacing:-.105em;max-width:1100px}.hero-title em{font-style:normal;color:var(--lime)}.hero-title span{display:block}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:50px}.hero-sub{font-size:clamp(1.1rem,2vw,1.65rem);line-height:1.5;letter-spacing:-.025em;max-width:490px;color:#d7e0db}.hero-sub strong{color:white}.scroll-link{display:inline-flex;align-items:center;gap:20px;padding-bottom:10px;border-bottom:1px solid #859891;font-size:.75rem;font-weight:800;letter-spacing:.13em;white-space:nowrap}.scroll-link span{display:grid;place-items:center;width:40px;height:40px;border:1px solid #789086;border-radius:50%;font-size:1rem;transition:transform .3s,background .3s}.scroll-link:hover span{transform:translateY(5px);background:#d8fa8325}
-    .marquee{display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--lime);padding:20px 6.1%;font-family:var(--display);font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.marquee span:nth-child(2),.marquee span:nth-child(4){opacity:.42}
-    section{scroll-margin-top:30px}.section-pad{padding-top:112px;padding-bottom:115px}.section-intro{display:grid;grid-template-columns:1fr 2fr;gap:60px;align-items:start;margin-bottom:58px}.section-intro .eyebrow{padding-top:18px;color:#617068}.section-title{font:800 clamp(3.1rem,5.4vw,5.9rem)/1.04 var(--display);letter-spacing:-.08em;margin:0}.section-title i{font-weight:500;font-style:normal;color:#a5b1a7}.section-description{margin:23px 0 0;color:var(--muted);font-size:1rem;line-height:1.65;max-width:450px}
-    .experience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.experience-card{position:relative;display:flex;flex-direction:column;min-height:360px;padding:34px 36px 35px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,border-color .35s}.experience-card:hover{transform:translateY(-6px);border-color:#b5c1b3;box-shadow:0 22px 50px #1a2a2512}.experience-card:before{content:"";position:absolute;width:180px;height:180px;right:-110px;top:-110px;border-radius:50%;background:var(--lime);transition:transform .5s}.experience-card:hover:before{transform:scale(2.1)}.card-top{display:flex;justify-content:space-between;align-items:center;gap:20px;position:relative;z-index:1}.company-logo{display:grid;place-items:center;width:112px;height:58px;background:#f5f6f1;border:1px solid #e6eae2;border-radius:12px;padding:12px}.company-logo img{display:block;width:100%;height:100%;object-fit:contain}.date{font-family:var(--display);font-weight:700;font-size:.76rem;color:#718077;text-align:right}.card-number{margin-top:58px;font-size:.72rem;font-weight:800;color:#96a19b;letter-spacing:.1em}.card-company{margin:12px 0 5px;font:800 clamp(1.8rem,2.6vw,2.8rem)/1.12 var(--display);letter-spacing:-.055em}.business{font-size:.88rem;color:#708078;font-weight:600}.card-divider{height:1px;background:#dfe5df;margin:25px 0 20px}.card-role{display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:.88rem;font-weight:800}.card-role .arrow{font-size:1.2rem;color:#7a8b81;transform:rotate(-45deg)}.card-description{margin:13px 0 0;color:#65736b;font-size:.87rem;line-height:1.65}
-    .education-section{background:#e9eee8}.education-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:46px;gap:30px}.education-head .eyebrow{color:#627269}.education-items{border-top:1px solid #cbd5cb}.education-row{display:grid;grid-template-columns:165px 62px 1fr auto;gap:30px;align-items:center;padding:32px 0;border-bottom:1px solid #cbd5cb;transition:padding .25s}.education-row:hover{padding-left:10px}.education-date{font-size:.8rem;color:#66766b;font-weight:700}.school-icon{width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:white;box-shadow:0 3px 13px #17231c0a}.school-icon img{width:34px;height:34px;object-fit:contain}.school-title{font:800 clamp(1.15rem,1.8vw,1.75rem)/1.25 var(--display);letter-spacing:-.045em}.degree{color:#66786b;margin-top:8px;font-size:.86rem}.edu-arrow{font-size:1.4rem;color:#8b9b8e}
-    footer{background:var(--ink);color:#eff3ec}.footer-inner{min-height:240px;display:flex;justify-content:space-between;align-items:end;gap:40px;padding-top:55px;padding-bottom:55px}.footer-name{font:800 clamp(3rem,6vw,6rem)/1 var(--display);letter-spacing:-.085em}.footer-meta{text-align:right;font-size:.77rem;color:#9babaa;line-height:2}.footer-meta strong{display:block;color:var(--lime);font-weight:800;letter-spacing:.08em}
-    @media(max-width:900px){.frame{padding:0 5%}.hero-inner{min-height:590px}.hero-title{font-size:clamp(5.3rem,14vw,9rem)}.section-intro{grid-template-columns:1fr;gap:14px}.section-intro .eyebrow{padding:0}.education-row{grid-template-columns:100px 55px 1fr;gap:20px}.edu-arrow{display:none}}
-    @media(max-width:640px){.nav{height:72px}.nav-right{gap:15px;font-size:.75rem}.nav-right a:first-child{display:none}.nav-pill{padding:8px 12px}.hero-inner{min-height:610px;padding-top:60px;padding-bottom:50px;gap:40px}.hero-title{font-size:clamp(4.6rem,20vw,7.2rem);letter-spacing:-.105em}.hero-top .side-note{display:none}.hero-bottom{align-items:start;flex-direction:column;gap:24px}.hero-sub{font-size:1.05rem}.marquee{font-size:.55rem;gap:9px;padding:17px 5%;flex-wrap:wrap}.marquee span:nth-child(4){display:none}.section-pad{padding-top:70px;padding-bottom:78px}.section-title{font-size:3.4rem}.experience-grid{grid-template-columns:1fr;gap:13px}.experience-card{min-height:335px;padding:26px}.card-number{margin-top:45px}.education-head{margin-bottom:30px}.education-row{grid-template-columns:1fr 46px;gap:12px;padding:25px 0}.education-date{grid-column:1/-1}.school-icon{grid-column:2;grid-row:2}.school-info{grid-column:1;grid-row:2}.school-title{font-size:1.18rem}.degree{line-height:1.45}.footer-inner{min-height:200px;align-items:start;flex-direction:column}.footer-meta{text-align:left}}
-    @media(prefers-reduced-motion:no-preference){.hero-title{animation:riseIn .8s both}.hero-sub{animation:riseIn .8s .15s both}.experience-card{animation:riseIn .6s both;animation-timeline:view();animation-range:entry 0% entry 18%}@keyframes riseIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}}
+    :root{--bg:#fbfbfa;--fg:#1d1d1b;--muted:#777773;--line:#dfdfdc;--soft:#f1f1ee}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    ::selection{background:#dce6db}
+    .container{width:min(100% - 84px,1080px);margin:0 auto}
+    .topbar{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
+    .brand{font-size:14px;letter-spacing:-.025em;font-weight:700}
+    .nav{display:flex;gap:28px;font-size:12px;color:#555552}
+    .nav a:hover{color:#000}
+    .hero{padding:146px 0 154px;display:grid;grid-template-columns:1fr auto;align-items:end;gap:40px}
+    .hero h1{font-size:clamp(78px,12vw,156px);font-weight:500;letter-spacing:-.095em;line-height:.94;margin:0 0 24px -9px}
+    .hero p{max-width:520px;font-size:18px;line-height:1.6;letter-spacing:-.025em;margin:0;color:#777773}
+    .hero-tag{border:1px solid var(--line);border-radius:30px;padding:10px 16px;font-size:11px;color:#60605b;letter-spacing:.03em;white-space:nowrap;margin-bottom:12px}
+    .section{padding-bottom:118px}
+    .section-head{border-top:1px solid var(--fg);padding-top:24px;display:flex;align-items:start;justify-content:space-between;gap:24px;margin-bottom:64px}
+    .section-label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .section-index{font-size:12px;color:var(--muted)}
+    .entry{display:grid;grid-template-columns:188px 1fr;gap:38px;padding:31px 0 39px;border-bottom:1px solid var(--line)}
+    .entry:first-child{padding-top:0}
+    .entry-date{font-size:12px;color:var(--muted);letter-spacing:.01em;padding-top:7px}
+    .entry-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);gap:36px;align-items:start}
+    .company{font-size:clamp(22px,2.4vw,31px);font-weight:500;letter-spacing:-.055em;line-height:1.15;margin:0 0 9px}
+    .department{font-size:13px;color:var(--muted);line-height:1.5}
+    .role{font-size:14px;font-weight:600;line-height:1.5;margin:2px 0 9px}
+    .summary{font-size:13px;color:var(--muted);line-height:1.7;margin:0;max-width:340px}
+    .education .entry{padding-top:30px;padding-bottom:35px}
+    .education .entry-content{display:block}
+    .education .company{font-size:clamp(20px,2.2vw,27px)}
+    .education .role{font-size:13px;color:var(--muted);font-weight:400;margin-top:13px}
+    footer{border-top:1px solid var(--line);min-height:132px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}
+    footer strong{color:var(--fg);font-weight:600}
+    @media(max-width:800px){.container{width:min(100% - 56px,1080px)}.hero{padding:105px 0 115px}.hero h1{font-size:clamp(69px,13vw,115px)}.entry{grid-template-columns:130px 1fr;gap:20px}.entry-content{grid-template-columns:1fr;gap:19px}}
+    @media(max-width:520px){.container{width:calc(100% - 40px)}.topbar{height:65px}.nav{gap:16px}.hero{display:block;padding:100px 0 95px}.hero h1{font-size:clamp(60px,17vw,92px);margin-left:-5px}.hero p{font-size:15px}.hero-tag{display:inline-block;margin-top:32px}.section{padding-bottom:85px}.section-head{margin-bottom:36px}.entry{display:block;padding:27px 0 32px}.entry-date{padding:0;margin-bottom:19px}.entry-content{gap:19px}.company{font-size:27px}.education .entry{padding:26px 0 31px}footer{min-height:112px}}
   </style>
 </head>
 <body>
-  <header><div class="frame nav"><a class="wordmark" href="#top"><span class="mark">ZY</span>ZEYU YU</a><nav class="nav-right" aria-label="Main navigation"><a href="#experience">Experience</a><a href="#education">Education</a><a class="nav-pill" href="#experience">Explore ↗</a></nav></div></header>
-  <main id="top">
-    <section class="hero" aria-label="Introduction"><div class="frame hero-inner"><div class="hero-top"><span class="status"><span class="status-dot"></span>PERSONAL PORTFOLIO</span><span class="side-note">STRATEGY · DATA · SYSTEMS</span></div><h1 class="hero-title"><span>Zeyu</span><span>Yu<em>.</em></span></h1><div class="hero-bottom"><p class="hero-sub"><strong>Curious about how things work.</strong><br>Exploring product strategy, data analysis and business decision-making.</p><a class="scroll-link" href="#experience">SCROLL TO EXPLORE <span>↓</span></a></div></div></section>
-    <div class="marquee" aria-label="Focus areas"><span>Product Strategy</span><span>✳</span><span>Data Analysis</span><span>✳</span><span>Supply Chain</span><span>✳</span><span>Business Decisions</span></div>
-    <section class="frame section-pad" id="experience"><div class="section-intro"><div class="eyebrow">01 / Experience</div><div><h2 class="section-title">Where I've<br><i>worked.</i></h2><p class="section-description">Selected internship experience across technology, supply chain and healthcare. A concise overview of teams and areas of work.</p></div></div>
-      <div class="experience-grid">
-        <article class="experience-card"><div class="card-top"><div class="company-logo"><img alt="ByteDance" src="https://zeyu-yu-resume.netlify.app/logos/bytedance.svg"></div><div class="date">MAY — SEP 2026</div></div><span class="card-number">EXPERIENCE / 01</span><h3 class="card-company">ByteDance</h3><div class="business">Commercial Business</div><div class="card-divider"></div><div class="card-role">Strategy Intern <span class="arrow">↗</span></div><p class="card-description">Data analysis and strategy research within commercial business.</p></article>
-        <article class="experience-card"><div class="card-top"><div class="company-logo"><img alt="ByteDance" src="https://zeyu-yu-resume.netlify.app/logos/bytedance.svg"></div><div class="date">JAN — APR 2026</div></div><span class="card-number">EXPERIENCE / 02</span><h3 class="card-company">ByteDance</h3><div class="business">E-commerce</div><div class="card-divider"></div><div class="card-role">Strategy Intern <span class="arrow">↗</span></div><p class="card-description">Product strategy and data analysis in e-commerce.</p></article>
-        <article class="experience-card"><div class="card-top"><div class="company-logo"><img alt="Bosch" src="https://zeyu-yu-resume.netlify.app/logos/bosch.svg"></div><div class="date">OCT — DEC 2025</div></div><span class="card-number">EXPERIENCE / 03</span><h3 class="card-company">Bosch</h3><div class="business">Asia Pacific Supply Chain</div><div class="card-divider"></div><div class="card-role">Intern <span class="arrow">↗</span></div><p class="card-description">Supply chain digitalization and business analysis.</p></article>
-        <article class="experience-card"><div class="card-top"><div class="company-logo"><img alt="AstraZeneca" src="https://zeyu-yu-resume.netlify.app/logos/astrazeneca-mark.svg"></div><div class="date">JUN — NOV 2024</div></div><span class="card-number">EXPERIENCE / 04</span><h3 class="card-company">AstraZeneca</h3><div class="business">Marketing</div><div class="card-divider"></div><div class="card-role">Marketing Intern <span class="arrow">↗</span></div><p class="card-description">Market research and data analysis.</p></article>
+  <header class="container topbar">
+    <a class="brand" href="#top">Zeyu Yu</a>
+    <nav class="nav" aria-label="Navigation"><a href="#experience">Experience</a><a href="#education">Education</a></nav>
+  </header>
+  <main id="top" class="container">
+    <div class="hero">
+      <div><h1>Zeyu Yu<span style="color:#a7a7a0">.</span></h1><p>Interested in product strategy, data analysis, and business decision-making.</p></div>
+      <span class="hero-tag">PERSONAL PORTFOLIO</span>
+    </div>
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="section-head"><h2 class="section-label" id="experience-title">Experience</h2><span class="section-index">01 — 04</span></div>
+      <div class="entry-list">
+        <article class="entry"><div class="entry-date">May — Sep 2026</div><div class="entry-content"><div><h3 class="company">ByteDance</h3><div class="department">Commercial Business</div></div><div><p class="role">Strategy Intern</p><p class="summary">Data analysis and strategy research within commercial business.</p></div></div></article>
+        <article class="entry"><div class="entry-date">Jan — Apr 2026</div><div class="entry-content"><div><h3 class="company">ByteDance</h3><div class="department">E-commerce</div></div><div><p class="role">Strategy Intern</p><p class="summary">Product strategy and data analysis in e-commerce.</p></div></div></article>
+        <article class="entry"><div class="entry-date">Oct — Dec 2025</div><div class="entry-content"><div><h3 class="company">Bosch</h3><div class="department">Asia Pacific Supply Chain</div></div><div><p class="role">Intern</p><p class="summary">Supply chain digitalization and business analysis.</p></div></div></article>
+        <article class="entry"><div class="entry-date">Jun — Nov 2024</div><div class="entry-content"><div><h3 class="company">AstraZeneca</h3><div class="department">Marketing</div></div><div><p class="role">Marketing Intern</p><p class="summary">Market research and data analysis.</p></div></div></article>
       </div>
     </section>
-    <section class="education-section section-pad" id="education"><div class="frame"><div class="education-head"><div><div class="eyebrow">02 / Education</div><h2 class="section-title" style="margin-top:20px">Always<br><i>learning.</i></h2></div></div><div class="education-items">
-      <div class="education-row"><div class="education-date">2026 — 2029</div><div class="school-icon"><img alt="Beihang University" src="https://zeyu-yu-resume.netlify.app/logos/buaa.jpg"></div><div class="school-info"><div class="school-title">Beihang University</div><div class="degree">Master · Industrial Engineering and Management</div></div><div class="edu-arrow">↗</div></div>
-      <div class="education-row"><div class="education-date">2022 — 2026</div><div class="school-icon"><img alt="East China University of Science and Technology" src="https://zeyu-yu-resume.netlify.app/logos/ecust.jpg"></div><div class="school-info"><div class="school-title">East China University of Science and Technology</div><div class="degree">Bachelor · Engineering Management</div></div><div class="edu-arrow">↗</div></div>
-    </div></div></section>
+    <section id="education" class="section education" aria-labelledby="education-title">
+      <div class="section-head"><h2 class="section-label" id="education-title">Education</h2><span class="section-index">01 — 02</span></div>
+      <div class="entry-list">
+        <article class="entry"><div class="entry-date">2026 — 2029</div><div class="entry-content"><h3 class="company">Beihang University</h3><p class="role">Master · Industrial Engineering and Management</p></div></article>
+        <article class="entry"><div class="entry-date">2022 — 2026</div><div class="entry-content"><h3 class="company">East China University of Science and Technology</h3><p class="role">Bachelor · Engineering Management</p></div></article>
+      </div>
+    </section>
   </main>
-  <footer><div class="frame footer-inner"><div class="footer-name">Zeyu Yu<span style="color:var(--lime)">.</span></div><div class="footer-meta"><strong>PERSONAL PORTFOLIO</strong>© 2026 Zeyu Yu</div></div></footer>
+  <footer class="container"><strong>Zeyu Yu</strong><span>© 2026</span></footer>
 </body>
 </html>
