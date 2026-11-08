@@ -14,9 +14,10 @@
     .section{margin-top:43px}.section:first-of-type{margin-top:0}.section-title{display:flex;align-items:center;gap:18px;margin:0 0 23px;font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:19px;letter-spacing:.01em;color:var(--accent)}.section-title:after{content:"";height:1px;background:var(--rule);flex:1}
     .entry{margin-bottom:29px;break-inside:avoid}.entry:last-child{margin-bottom:0}.entry-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:6px}.entry-title{font-weight:700;font-size:15px;letter-spacing:-.015em}.date{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:.015em;text-align:right;flex:none}.entry-subtitle{font-size:13px;color:var(--text);margin-bottom:7px}.entry-detail{font-size:13px;line-height:1.72;color:#59636d;margin:0;max-width:620px}.honors{color:#536272;font-size:12px;margin:6px 0 0}
     .company-row{display:flex;align-items:center;gap:12px;min-width:0}.company-logo{width:71px;height:24px;object-fit:contain;object-position:left center;flex-shrink:0}.company-name{font-weight:700;font-size:15px;letter-spacing:-.015em}.experience .entry-head{align-items:center}.experience .entry-subtitle,.experience .entry-detail{margin-left:83px}.experience .entry{padding-bottom:3px}
+    .school-row{display:flex;align-items:center;gap:14px;min-width:0}.school-logo{width:44px;height:44px;object-fit:contain;flex:none}.education .entry-head{align-items:center}.education .entry-subtitle,.education .honors{margin-left:58px}
     .municipal-row{display:flex;align-items:center;gap:12px;min-width:0}.municipal-image{width:71px;height:65px;object-fit:contain;flex:none}.municipal-row .entry-title{min-width:0}.research .entry-subtitle,.research .entry-detail{margin-left:83px}
     .footer{text-align:center;border-top:1px solid var(--rule);margin-top:54px;padding-top:17px;color:#9ba2a9;font-size:10px;letter-spacing:.14em}
-    @media(max-width:700px){.resume{width:100%;min-height:100vh;margin:0;padding:44px 27px 46px;box-shadow:none;border:0}.identity{margin-bottom:38px}.identity h1{font-size:42px}.section{margin-top:37px}.entry-head{align-items:flex-start;flex-direction:column;gap:3px}.date{order:2}.entry-subtitle{margin-top:7px}.entry{margin-bottom:26px}.experience .entry-head{align-items:flex-start}.experience .entry-subtitle,.experience .entry-detail,.research .entry-subtitle,.research .entry-detail{margin-left:0}.company-row{gap:11px}.company-logo{width:67px;height:23px}.municipal-row{gap:11px}.municipal-image{width:67px;height:43px}}
+    @media(max-width:700px){.resume{width:100%;min-height:100vh;margin:0;padding:44px 27px 46px;box-shadow:none;border:0}.identity{margin-bottom:38px}.identity h1{font-size:42px}.section{margin-top:37px}.entry-head{align-items:flex-start;flex-direction:column;gap:3px}.date{order:2}.entry-subtitle{margin-top:7px}.entry{margin-bottom:26px}.education .entry-head,.experience .entry-head{align-items:flex-start}.education .entry-subtitle,.education .honors,.experience .entry-subtitle,.experience .entry-detail,.research .entry-subtitle,.research .entry-detail{margin-left:0}.school-row{gap:11px}.school-logo{width:39px;height:39px}.company-row{gap:11px}.company-logo{width:67px;height:23px}.municipal-row{gap:11px}.municipal-image{width:67px;height:43px}}
     @media print{@page{size:A4;margin:0}body{background:#fff}.resume{width:100%;min-height:297mm;margin:0;padding:20mm 19mm;border:0;box-shadow:none}.footer{margin-top:40px}.entry{break-inside:avoid}}
   </style>
 </head>
@@ -27,14 +28,14 @@
       <p>Personal Resume</p>
     </header>
 
-    <section class="section" aria-labelledby="education-title">
+    <section class="section education" aria-labelledby="education-title">
       <h2 class="section-title" id="education-title">Education</h2>
       <article class="entry">
-        <div class="entry-head"><div class="entry-title">Beihang University</div><div class="date">2026 – 2029</div></div>
+        <div class="entry-head"><div class="school-row"><img class="school-logo" src="https://static.wixstatic.com/media/912e35_da1b2b926e5a48f7bd0cbe6c3495cc3e~mv2.png/v1/fill/w_1200%2Ch_1200%2Cal_c/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6.png" alt="Beihang University emblem"><div class="entry-title">Beihang University</div></div><div class="date">2026 – 2029</div></div>
         <div class="entry-subtitle">Master's Degree</div>
       </article>
       <article class="entry">
-        <div class="entry-head"><div class="entry-title">East China University of Science and Technology</div><div class="date">2022 – 2026</div></div>
+        <div class="entry-head"><div class="school-row"><img class="school-logo" src="https://img.phb123.com/uploads/allimg/220602/810-2206021441020-L-lp.png" alt="East China University of Science and Technology emblem"><div class="entry-title">East China University of Science and Technology</div></div><div class="date">2022 – 2026</div></div>
         <div class="entry-subtitle">Bachelor's Degree</div>
         <p class="honors">National Scholarship · President's Scholarship</p>
       </article>
