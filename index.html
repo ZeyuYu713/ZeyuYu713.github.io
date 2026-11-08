@@ -3,34 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#edf4f7">
+  <meta name="theme-color" content="#f3f4f5">
   <meta name="description" content="Zeyu Yu — education and professional experience.">
   <title>Zeyu Yu | Resume</title>
   <style>
-    :root{--ink:#1c3445;--text:#415767;--muted:#758592;--rule:#dce7ec;--page:#fff;--canvas:#eef4f7;--accent:#245a77;--teal:#3a918d;--logo-column:62px;--entry-gap:16px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 8%,#dfeef2 0,transparent 35%),radial-gradient(circle at 92% 70%,#e8f0f6 0,transparent 35%),var(--canvas);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased}
-    .resume{width:min(860px,calc(100% - 48px));min-height:1040px;margin:42px auto 68px;padding:66px 78px 62px;background:var(--page);box-shadow:0 20px 60px #23485b15;border:1px solid #e1e9ed;border-top:4px solid #477f96;border-radius:10px}
+    :root{--ink:#202b35;--text:#45515b;--muted:#77828b;--rule:#e2e7eb;--page:#fff;--canvas:#f5f6f7;--accent:#2d4559;--logo-column:62px;--entry-gap:16px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--canvas);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased}
+    .resume{width:min(860px,calc(100% - 48px));min-height:1040px;margin:42px auto 68px;padding:66px 78px 62px;background:var(--page);box-shadow:0 15px 45px #2532400a;border:1px solid #e8ebee}
     .identity{text-align:left;margin-bottom:40px;padding-bottom:24px;border-bottom:1px solid #cbd4dc}.identity h1{font-family:Georgia,'Times New Roman',serif;font-size:49px;font-weight:400;letter-spacing:-.035em;line-height:1.12;margin:0 0 12px}.identity p{font-size:10px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin:0}
-    .section{margin-top:41px;scroll-margin-top:28px}.section:first-of-type{margin-top:0}.section-title{display:flex;align-items:center;gap:12px;margin:0 0 22px;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.135em;color:var(--accent)}.section-title:before{content:"";width:6px;height:6px;background:#4b8fac;border-radius:50%;flex:none}.section-title:after{content:"";height:1px;background:var(--rule);flex:1}.experience .section-title:before{background:#3a918d}.research .section-title:before{background:#c09a57}
+    .section{margin-top:41px}.section:first-of-type{margin-top:0}.section-title{display:flex;align-items:center;gap:18px;margin:0 0 22px;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.135em;color:var(--accent)}.section-title:after{content:"";height:1px;background:var(--rule);flex:1}
     .entry{margin-bottom:26px;break-inside:avoid}.entry:last-child{margin-bottom:0}.entry-head{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:18px;min-height:50px;margin-bottom:2px}.entry-title,.company-name{font-weight:700;font-size:15px;letter-spacing:-.012em;line-height:1.35}.date{font-size:12px;color:#6c7781;white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:.015em;text-align:right}.entry-subtitle{font-size:13px;color:#46525c;margin-bottom:6px}.entry-detail{font-size:12.7px;line-height:1.72;color:#5e6b76;margin:0;max-width:580px}.honors{color:#64717c;font-size:12px;margin:5px 0 0}
     .company-row,.school-row,.municipal-row{display:grid;grid-template-columns:var(--logo-column) minmax(0,1fr);gap:var(--entry-gap);align-items:center;min-width:0}
     .company-logo,.school-logo,.municipal-image{display:block;max-width:var(--logo-column);margin:auto;object-fit:contain;object-position:center center}
-    .company-logo{width:60px;height:43px;transform:scale(1.24);transform-origin:center}.school-logo{width:48px;height:48px;background:#f3f8fa;border-radius:10px;padding:3px;box-shadow:inset 0 0 0 1px #e5eef2}.municipal-image{width:50px;height:50px;background:#faf8f2;border-radius:10px;padding:3px;box-shadow:inset 0 0 0 1px #f0e8d8}
+    .company-logo{width:60px;height:43px;transform:scale(1.24);transform-origin:center}.school-logo{width:48px;height:48px}.municipal-image{width:50px;height:50px}
     .education .entry-subtitle,.education .honors,.experience .entry-subtitle,.experience .entry-detail,.research .entry-subtitle,.research .entry-detail{margin-left:calc(var(--logo-column) + var(--entry-gap))}
-    .footer{text-align:center;border-top:1px solid var(--rule);margin-top:50px;padding-top:18px;color:#8da0ac;font-size:10px;letter-spacing:.17em}
-    .quick-nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.quick-nav a{font-size:11px;font-weight:600;letter-spacing:.02em;color:#537287;text-decoration:none;border:1px solid #dce9ed;background:#f7fafb;border-radius:999px;padding:6px 13px;transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease}.quick-nav a:hover,.quick-nav a.is-active{color:#fff;background:#2f7189;border-color:#2f7189;transform:translateY(-1px)}.quick-nav a:focus-visible{outline:2px solid #3b8da3;outline-offset:3px}
-    .reading-progress{position:fixed;inset:0 auto auto 0;width:100%;height:3px;z-index:10;pointer-events:none;background:linear-gradient(90deg,#387f9d,#4ca49d);transform:scaleX(0);transform-origin:left center}
+    .footer{text-align:center;border-top:1px solid var(--rule);margin-top:50px;padding-top:18px;color:#a1a9b0;font-size:10px;letter-spacing:.17em}
+    .reading-progress{position:fixed;inset:0 auto auto 0;width:100%;height:2px;z-index:10;pointer-events:none;background:#3e6079;transform:scaleX(0);transform-origin:left center}
     .identity h1{animation:title-rise .75s cubic-bezier(.22,1,.36,1) both}.identity p{animation:title-rise .75s .12s cubic-bezier(.22,1,.36,1) both}
     @keyframes title-rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-    .entry{position:relative;transition:background-color .25s ease}.entry:before{content:"";position:absolute;left:-17px;top:7px;bottom:7px;width:2px;background:#4e9aab;opacity:0;transform:scaleY(.55);transition:opacity .25s ease,transform .25s ease}
+    .entry{position:relative;transition:background-color .25s ease}.entry:before{content:"";position:absolute;left:-17px;top:7px;bottom:7px;width:2px;background:#7d9bb0;opacity:0;transform:scaleY(.55);transition:opacity .25s ease,transform .25s ease}
     .entry:hover:before{opacity:.75;transform:scaleY(1)}.entry-title,.company-name{transition:color .2s ease}.entry:hover .entry-title,.entry:hover .company-name{color:#315f7d}
     .school-logo,.municipal-image{transition:transform .3s cubic-bezier(.22,1,.36,1)}.entry:hover .school-logo,.entry:hover .municipal-image{transform:scale(1.06)}.company-logo{transition:transform .3s cubic-bezier(.22,1,.36,1)}.entry:hover .company-logo{transform:scale(1.34)}
     .js-ready .reveal{opacity:0;transform:translateY(14px);transition:opacity .65s ease,transform .65s cubic-bezier(.22,1,.36,1)}.js-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
     .back-top{position:fixed;right:27px;bottom:27px;width:37px;height:37px;border:1px solid #d8dfe4;border-radius:50%;background:#fff;color:#52687a;box-shadow:0 6px 18px #29384714;display:grid;place-items:center;font:19px/1 Arial,sans-serif;cursor:pointer;opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .25s ease,transform .25s ease,background .2s ease;z-index:9}.back-top.is-visible{opacity:1;transform:translateY(0);pointer-events:auto}.back-top:hover{background:#f0f4f7}.back-top:focus-visible{outline:2px solid #537d9a;outline-offset:3px}
-    @media(max-width:700px){:root{--logo-column:48px;--entry-gap:13px}.resume{width:100%;min-height:100vh;margin:0;padding:42px 25px 46px;box-shadow:none;border:0;border-radius:0}.identity{margin-bottom:34px;padding-bottom:21px}.identity h1{font-size:43px}.quick-nav{gap:6px;margin-top:20px}.quick-nav a{font-size:10px;padding:6px 10px}.section{margin-top:37px}.section-title{font-size:11.5px;letter-spacing:.11em;margin-bottom:21px}.entry{margin-bottom:27px}.entry-head{grid-template-columns:minmax(0,1fr);row-gap:2px;min-height:0;margin-bottom:5px}.entry-title,.company-name{font-size:14px}.company-logo{width:47px;height:39px;transform:scale(1.16)}.school-logo{width:42px;height:42px}.municipal-image{width:43px;height:43px}.date{text-align:left;margin-left:calc(var(--logo-column) + var(--entry-gap));font-size:11.5px}.entry-subtitle{font-size:12.5px}.entry-detail{font-size:12.3px}}
+    @media(max-width:700px){:root{--logo-column:48px;--entry-gap:13px}.resume{width:100%;min-height:100vh;margin:0;padding:42px 25px 46px;box-shadow:none;border:0}.identity{margin-bottom:34px;padding-bottom:21px}.identity h1{font-size:43px}.section{margin-top:37px}.section-title{font-size:11.5px;letter-spacing:.11em;margin-bottom:21px}.entry{margin-bottom:27px}.entry-head{grid-template-columns:minmax(0,1fr);row-gap:2px;min-height:0;margin-bottom:5px}.entry-title,.company-name{font-size:14px}.company-logo{width:47px;height:39px;transform:scale(1.16)}.school-logo{width:42px;height:42px}.municipal-image{width:43px;height:43px}.date{text-align:left;margin-left:calc(var(--logo-column) + var(--entry-gap));font-size:11.5px}.entry-subtitle{font-size:12.5px}.entry-detail{font-size:12.3px}}
     @media(max-width:700px){.back-top{right:17px;bottom:17px;width:34px;height:34px}.entry:before{left:-11px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.identity h1,.identity p{animation:none}.js-ready .reveal{opacity:1;transform:none;transition:none}.entry:before,.entry-title,.company-name,.school-logo,.company-logo,.municipal-image,.back-top,.quick-nav a{transition:none}}
-    @media print{@page{size:A4;margin:0}body{background:#fff}.resume{width:100%;min-height:297mm;margin:0;padding:20mm 19mm;border:0;border-radius:0;box-shadow:none}.footer{margin-top:40px}.entry{break-inside:avoid}.reading-progress,.back-top,.quick-nav{display:none}.js-ready .reveal{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.identity h1,.identity p{animation:none}.js-ready .reveal{opacity:1;transform:none;transition:none}.entry:before,.entry-title,.company-name,.school-logo,.company-logo,.municipal-image,.back-top{transition:none}}
+    @media print{@page{size:A4;margin:0}body{background:#fff}.resume{width:100%;min-height:297mm;margin:0;padding:20mm 19mm;border:0;box-shadow:none}.footer{margin-top:40px}.entry{break-inside:avoid}.reading-progress,.back-top{display:none}.js-ready .reveal{opacity:1;transform:none}}
   </style>
 </head>
 <body>
@@ -39,7 +38,6 @@
     <header class="identity">
       <h1>Zeyu Yu</h1>
       <p>Personal Resume</p>
-      <nav class="quick-nav" aria-label="Resume sections"><a href="#education-title">Education</a><a href="#experience-title">Experience</a><a href="#research-title">Research</a></nav>
     </header>
 
     <section class="section education" aria-labelledby="education-title">
@@ -102,20 +100,6 @@
       window.addEventListener('resize', updateScroll);
       backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reducedMotion.matches ? 'auto' : 'smooth' }));
       updateScroll();
-      const navLinks = [...document.querySelectorAll('.quick-nav a')];
-      const sections = [...document.querySelectorAll('main > section')];
-      const updateNavigation = () => {
-        const current = [...sections].reverse().find(section => section.getBoundingClientRect().top <= window.innerHeight * .38) || sections[0];
-        navLinks.forEach(link => {
-          const active = link.getAttribute('href') === `#${current.querySelector('h2').id}`;
-          link.classList.toggle('is-active', active);
-          if (active) link.setAttribute('aria-current', 'location');
-          else link.removeAttribute('aria-current');
-        });
-      };
-      window.addEventListener('scroll', updateNavigation, { passive: true });
-      window.addEventListener('resize', updateNavigation);
-      updateNavigation();
       if ('IntersectionObserver' in window && !reducedMotion.matches) {
         const targets = document.querySelectorAll('.section-title, .entry');
         const observer = new IntersectionObserver((entries) => {
